@@ -1,4 +1,9 @@
+import Vue from 'vue'
+import Vuetify from 'vuetify'
+
 import Home from './home.vue'
+
+Vue.use(Vuetify)
 
 describe('@views/home', () => {
   it('is a valid view', () => {
@@ -6,7 +11,9 @@ describe('@views/home', () => {
   })
 
   it('renders an element', () => {
-    const { element } = shallowMount(Home)
+    const { element } = shallowMount(Home, {
+      vuetify: new Vuetify()
+    })
     expect(element.textContent).toContain('Home Page')
   })
 })
