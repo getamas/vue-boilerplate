@@ -12,9 +12,9 @@ export default {
 </script>
 
 <template>
-  <div id="app">
-    <RouterView />
-  </div>
+  <v-app>
+    <router-view></router-view>
+  </v-app>
 </template>
 
 <style lang="scss">

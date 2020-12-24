@@ -14,7 +14,10 @@ export default {
 
 <template>
   <Layout>
-    <h1>Home Page</h1>
-    <img src="@/app/assets/images/logo.png" alt="Logo" />
+    <v-row>
+      <v-col>
+        <h1>Home Page</h1>
+      </v-col>
+    </v-row>
   </Layout>
 </template>
