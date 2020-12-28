@@ -13,5 +13,14 @@ module.exports = {
     'vue-jest': {
       experimentalCSSCompile: false
     }
-  }
+  },
+  collectCoverageFrom: [
+    '**/models/**/*.js',
+    '**/services/**/*.js',
+    '**/store/**/*.js',
+    '!**/store.js',
+    '!**/*.mock.js',
+    '!**/*.types.js',
+    '!**/index.js'
+  ]
 }
