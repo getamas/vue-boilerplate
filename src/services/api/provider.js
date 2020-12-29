@@ -1,5 +1,5 @@
 import ArticlesService from './articles/articles.service'
 
-export const provider = () => ({
+export default {
   articles: ArticlesService
-})
+}
