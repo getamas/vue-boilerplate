@@ -1,4 +1,4 @@
-import ArticlesService from './api/articles'
+import ArticlesService from './articles/articles.service'
 
 export const provider = () => ({
   articles: ArticlesService
