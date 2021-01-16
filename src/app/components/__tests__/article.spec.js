@@ -2,8 +2,9 @@ import Vue from 'vue'
 import Vuetify from 'vuetify'
 import { mount, createLocalVue } from '@vue/test-utils'
 import VueRouter from 'vue-router'
+
 import { mockArticles } from '@/models'
-import Article from './article.vue'
+import Article from '@/app/components/article.vue'
 
 Vue.use(Vuetify)
 Vue.use(VueRouter)

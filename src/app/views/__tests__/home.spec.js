@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Vuetify from 'vuetify'
 
-import Home from './home.vue'
+import Home from '@/app/views/home.vue'
 
 Vue.use(Vuetify)
 

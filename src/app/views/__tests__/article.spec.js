@@ -1,4 +1,4 @@
-import Article from './article.vue'
+import Article from '@/app/views/article.vue'
 
 describe('@views/article', () => {
   it('is a valid view', () => {

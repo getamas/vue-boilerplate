@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Vuetify from 'vuetify'
-import MainLayout from './main.vue'
+
+import MainLayout from '@/app/layouts/main.vue'
 
 Vue.use(Vuetify)
 
