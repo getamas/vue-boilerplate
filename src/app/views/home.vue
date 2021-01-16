@@ -1,5 +1,8 @@
 <script>
+import { FETCH_ARTICLES } from '@/store/actions'
+
 import Layout from '@/app/layouts/main.vue'
+import Article from '@/app/components/article.vue'
 
 export default {
   page: {
@@ -7,7 +10,16 @@ export default {
     meta: [{ name: 'description', content: 'The Home page' }]
   },
   components: {
-    Layout
+    Layout,
+    Article
+  },
+  computed: {
+    articles() {
+      return this.$store.getters['articles/getAllArticles']
+    }
+  },
+  mounted() {
+    this.$store.dispatch(`articles/${FETCH_ARTICLES}`)
   }
 }
 </script>
@@ -15,9 +27,7 @@ export default {
 <template>
   <Layout>
     <v-row>
-      <v-col>
-        <h1>Home Page</h1>
-      </v-col>
+      <Article v-for="(article, index) in articles" :key="index" :article="article" />
     </v-row>
   </Layout>
 </template>

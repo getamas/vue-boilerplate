@@ -8,7 +8,9 @@ export default {
 
 <template>
   <v-fragment>
-    <v-app-bar app color="primary" dark />
+    <v-app-bar app color="primary" dark>
+      <v-toolbar-title>Vue Boilerplate</v-toolbar-title>
+    </v-app-bar>
     <v-main>
       <v-container>
         <slot></slot>
