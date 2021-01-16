@@ -4,7 +4,7 @@ module.exports = {
     node: true
   },
   parserOptions: {
-    sourceType: 'script',
+    sourceType: 'module',
     parser: 'babel-eslint',
     ecmaVersion: 2020
   },
