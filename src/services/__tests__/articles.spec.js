@@ -1,8 +1,8 @@
 import { mockComments, mockArticles, mockArticlesData } from '@/models'
-import ArticlesService from './articles.service'
-import httpClient from '../http-client'
+import httpClient from '@/services/api/http-client'
+import ArticlesService from '@/services/api/articles/articles.service'
 
-jest.mock('../http-client')
+jest.mock('@/services/api/http-client')
 
 describe('>>> Articles Service', () => {
   const service = ArticlesService

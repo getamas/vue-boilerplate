@@ -27,7 +27,7 @@ module.exports = {
       }
     },
     {
-      files: ['**/*.spec.js'],
+      files: ['**/*.spec.js', '**/*.mock.js'],
       parserOptions: {
         parser: 'babel-eslint',
         sourceType: 'module'
