@@ -1,12 +1,12 @@
-# Vue Starter
+# Vue Boilerplate
 
-> Architecture and dev environment for new Vue SPA projects using [Vue CLI](https://github.com/vuejs/vue-cli).
+> Vue project boilerplate for enterprise scale applications using [Vue Starter](https://github.com/getamas/vue-starter).
 
-## Getting started
+## Project Setup
 
 ```bash
 # 1. Clone the repository.
-git clone git@github.com:getamas/vue-starter.git my-new-project
+git clone git@github.com:getamas/vue-boilerplate.git my-new-project
 
 # 2. Enter your newly-cloned folder.
 cd my-new-project
@@ -17,16 +17,6 @@ npm install
 # 4. Launch dev server, compiles and hot reloads for development.
 npm run serve
 ```
-
-## First-time setup
-
-Make sure you have the following installed:
-
-- [Node](https://nodejs.org/en/) (at least the latest LTS)
-
-Then update the following files to suit your application:
-
-- `src/app/app.config.json` (provides metadata about your app)
 
 ## Generators
 
@@ -45,5 +35,3 @@ npm run new layout
 # Generate a new Vuex module with adjacent unit test
 npm run new module
 ```
-
-Update existing or create new generators in the `generators` folder, with help from the [Hygen docs](http://www.hygen.io/).
